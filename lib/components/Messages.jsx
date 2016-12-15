@@ -1,14 +1,16 @@
 import React from 'react';
+import Utilities, { displayFirstName } from './Utilities';
 
 export default class Messages extends React.Component {
+
   render(){
   let { user, createdAt, content } = this.props;
   let timeStamp = getDateFormat(createdAt);
-  debugger;
+  let firstName = displayFirstName(user.displayName);
     return (
       <div>
         <section className='msg-header'>
-          <h3>{timeStamp + "  " + user.displayName}</h3>
+          <h3>{timeStamp + "  " + firstName}</h3>
         </section>
         <section className='msg-content'>
           <p>{content}</p>
@@ -34,7 +36,7 @@ const monthNames = ["January", "February", "March", "April", "May", "June",
 const formatTime = (hr, min) => {
   if (hr > 13) {
     return hour[hr] + ":" + min + 'pm';
-  } else return hour[hr] + ":" + min + 'am';
+  } else return hr + ":" + min + 'am';
 }
 
 const hour = {
@@ -52,4 +54,5 @@ const hour = {
 }
 
 
+// possibly look into downloading the moment.js library
 // <li key={index}>{user.displayName}: {content}</li>
