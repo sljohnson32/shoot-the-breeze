@@ -26,6 +26,7 @@ body {
   color: white;
   font-size: 20pt;
   outline: none;
+  border: none;
 }
 
 .app-title {
@@ -52,6 +53,7 @@ body {
   height: 50px;
   font-size: 20pt;
   outline: none;
+  border: none;
 }
 
 //MESSAGE SECTION//
@@ -84,11 +86,12 @@ body {
 
 //FOOTER//
 .welcome-section {
-  height: 100px;
+  height: 60px;
   background-color: #95a5a6;
 }
 
 .logged-in-message {
+  display: inline-block;
   margin-left: 10px;
   color: #ecf0f1;
   font-size: 20pt;
@@ -107,6 +110,7 @@ body {
   height: 50px;
   font-size: 20pt;
   outline: none;
+  border: none;
   margin-right: 20px;
 }
 
@@ -135,6 +139,7 @@ body {
   color: white;
   font-size: 20pt;
   outline: none;
+  border: none;
 }
 
 #submit-btn {
@@ -147,6 +152,11 @@ body {
   color: white;
   font-size: 20pt;
   outline: none;
+  border: none;
+}
+
+.true {
+  opacity: 0.5;
 }
 
 //USER LIST//
@@ -162,8 +172,4 @@ body {
   height: 130vh;
   float: right;
   width: 25%;
-}
-
-.true {
-  opacity: 0.5;
 }
