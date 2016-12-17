@@ -125,7 +125,7 @@ body {
   justify-content: space-between;
 }
 
-.clear-btn {
+#clear-btn {
   display: inline-block;
   margin: 10px;
   height: 50px;
@@ -137,7 +137,7 @@ body {
   outline: none;
 }
 
-.submit-btn {
+#submit-btn {
   display: inline-block;
   margin: 10px;
   height: 50px;
@@ -162,4 +162,8 @@ body {
   height: 130vh;
   float: right;
   width: 25%;
+}
+
+.true {
+  opacity: 0.5;
 }
