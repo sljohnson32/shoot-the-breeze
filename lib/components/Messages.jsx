@@ -10,7 +10,7 @@ export default class Messages extends React.Component {
     return (
       <div>
         <section className='msg-header'>
-          <h3>{timeStamp + "  " + firstName}</h3>
+          <h3 className="time-stamp">{timeStamp} <span className="name">{firstName}</span></h3>
         </section>
         <section className='msg-content'>
           <p>{content}</p>
