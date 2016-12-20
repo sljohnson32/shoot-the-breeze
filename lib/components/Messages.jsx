@@ -52,7 +52,3 @@ const hour = {
   22: "10",
   23: "11",
 }
-
-
-// possibly look into downloading the moment.js library
-// <li key={index}>{user.displayName}: {content}</li>
