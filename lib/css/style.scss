@@ -1,4 +1,5 @@
-// @import 'reset';
+@import 'reset';
+@import 'variables';
 
 body {
   background: white;
@@ -8,6 +9,15 @@ body {
 #new-message--content {
   height: 100px;
   border: 1px dotted aliceblue;
+}
+
+.current-user-icon {
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+  background: red;
 }
 
 //NAV BAR//
