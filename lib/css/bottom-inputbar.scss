@@ -1,0 +1,46 @@
+@import 'variables';
+
+.welcome-section {
+  height: 60px;
+  background-color: #95a5a6;
+  margin-top: 100px;
+}
+
+.logged-in-message {
+  display: inline-block;
+  margin-left: 10px;
+  color: #ecf0f1;
+  font-size: 20pt;
+}
+
+.logged-name {
+  font-weight: 800;
+}
+
+.msg-field {
+  margin-left: 10px;
+  color: #2c3e50;
+  background-color: #bdc3c7;
+  border-radius: 8px;
+  width: 700px;
+  height: 50px;
+  font-size: 20pt;
+  outline: none;
+  border: none;
+  margin-right: 20px;
+}
+
+.character-count {
+  display: inline-block;
+  color: white;
+  font-size: 15pt;
+}
+
+.message-input {
+  height: 100px;
+  width: 100%;
+  background-color: #2c3e50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

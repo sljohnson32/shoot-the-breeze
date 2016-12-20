@@ -1,0 +1,24 @@
+@import 'variables';
+
+.current-user-icon {
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+  background: red;
+}
+
+.user-title {
+  margin-left: 10px;
+  color: #2c3e50;
+  font-size: 25pt;
+  font-weight: 800;
+}
+
+.user-list {
+  // background-color: #bdc3c7;
+  height: 130vh;
+  float: right;
+  width: 25%;
+}

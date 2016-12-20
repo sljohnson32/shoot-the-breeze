@@ -1,0 +1,28 @@
+@import 'variables';
+
+.app-title {
+  display: inline-block;
+  color: white;
+  margin-left: 10px;
+  font-size: 25pt;
+  margin-right: 20px;
+}
+.nav-bar {
+  height: 100px;
+  width: 100%;
+  background-color: #2c3e50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter-field {
+  color: #2c3e50;
+  background-color: #bdc3c7;
+  border-radius: 8px;
+  width: 400px;
+  height: 50px;
+  font-size: 20pt;
+  outline: none;
+  border: none;
+}
