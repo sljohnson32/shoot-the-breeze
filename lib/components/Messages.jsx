@@ -4,9 +4,9 @@ import Utilities, { displayFirstName } from './Utilities';
 export default class Messages extends React.Component {
 
   render(){
-  let { user, createdAt, content } = this.props;
-  let timeStamp = getDateFormat(createdAt);
-  let firstName = displayFirstName(user.displayName);
+    const { user, createdAt, content } = this.props;
+    const timeStamp = getDateFormat(createdAt);
+    const firstName = displayFirstName(user.displayName);
     return (
       <div>
         <section className='msg-header'>
@@ -21,11 +21,11 @@ export default class Messages extends React.Component {
 }
 
 const getDateFormat = (date) => {
-  let dateLong = new Date(date);
-  let dateMonth = monthNames[dateLong.getMonth()];
-  let dateDay = dateLong.getDate();
-  let dateHour = dateLong.getHours();
-  let dateMinutes = dateLong.getMinutes();
+  const dateLong = new Date(date);
+  const dateMonth = monthNames[dateLong.getMonth()];
+  const dateDay = dateLong.getDate();
+  const dateHour = dateLong.getHours();
+  const dateMinutes = dateLong.getMinutes();
   return dateMonth + " " + dateDay + ", " + formatTime(dateHour, dateMinutes);
 }
 
