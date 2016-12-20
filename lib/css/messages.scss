@@ -1,0 +1,33 @@
+.message-section {
+  display: inline-block;
+  width: 70%;
+  height: 100vh;
+}
+
+.time-stamp {
+  display: inline-block;
+  color: #9b59b6;
+  font-size: 20pt;
+  width: 70%;
+  margin-left: 10px;
+  margin-bottom: 0;
+  font-weight: 400;
+
+}
+
+p {
+  margin-top: 0;
+}
+
+.name {
+  color: #2980b9;
+  font-size: 25pt;
+  font-weight: 700;
+}
+
+.msg-content {
+  color: #2c3e50;
+  font-size: 20pt;
+  width: 70%;
+  margin-left: 10px;
+}
