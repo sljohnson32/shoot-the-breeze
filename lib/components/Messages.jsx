@@ -9,8 +9,9 @@ export default class Messages extends React.Component {
     const firstName = displayFirstName(user.displayName);
     return (
       <div>
+        <div className='circle-img'><img src={user.photoURL} /></div>
         <section className='msg-header'>
-          <img src={user.photoURL} /><h3 className="time-stamp">{ timeStamp } <span className="name">{ firstName }</span></h3>
+          <h3 className="time-stamp">{ timeStamp } <span className="name">{ firstName }</span></h3>
         </section>
         <section className='msg-content'>
           <p>{ content }</p>
