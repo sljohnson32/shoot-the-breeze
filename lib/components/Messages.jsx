@@ -8,14 +8,13 @@ export default class Messages extends React.Component {
     const timeStamp = getDateFormat(createdAt);
     const firstName = displayFirstName(user.displayName);
     return (
-      <div>
-        <div className='circle-img'><img src={user.photoURL} /></div>
-        <section className='msg-header'>
-          <h3 className="time-stamp">{ timeStamp } <span className="name">{ firstName }</span></h3>
-        </section>
-        <section className='msg-content'>
-          <p>{ content }</p>
-        </section>
+      <div className='msg-block'>
+          <img src={user.photoURL} className='msg-img' />
+          <section className='msg-content'>
+            <h3 className="msg-time-stamp">{ timeStamp }</h3>
+            <h3 className="msg-name">{ firstName }</h3>
+            <p>{ content }</p>
+          </section>
       </div>
     )
   }

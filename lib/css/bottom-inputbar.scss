@@ -2,10 +2,10 @@
 
 .login-message {
   align-items: center;
-  padding: 2px;
+  padding-left: 10px;
   color: #ecf0f1;
   font-size: 14pt;
-  height: 8vh;
+  height: 7vh;
   background-color: $darkgray;
 }
 
@@ -17,27 +17,30 @@
   font-weight: 800;
 }
 
+.message-input {
+  align-items: center;
+  background-color: #2c3e50;
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+}
+
 .msg-field {
-  margin-left: 10px;
-  color: #2c3e50;
   background-color: #bdc3c7;
-  border-radius: 8px;
-  font-size: 12pt;
-  outline: none;
   border: none;
-  margin-right: 20px;
+  border-radius: 4px;
+  color: #2c3e50;
+  font-size: 12pt;
+  height: 38px;
+  margin-left: 10px;
+  margin-right: 25px;
+  padding-left: 15px;
+  outline: none;
+  width: 560px;
 }
 
 .character-count {
-  display: inline-block;
   color: white;
-  font-size: 10pt;
-}
-
-.message-input {
-  height: 10vh;
-  background-color: #2c3e50;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: inline-block;
+  font-size: 12pt;
 }
