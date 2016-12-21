@@ -12,3 +12,77 @@ body, html {
   max-width: 900px;
   margin: 0 auto;
 }
+
+@media screen and (max-width: 400px) {
+
+  .app-title {
+    display: none;
+  }
+
+  .nav-bar {
+    height: 15vh;
+    display: inline-block;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .filter-field {
+    width: 80%;
+    display: inline;
+  }
+
+  .sort-btn {
+    font-size: 12pt;
+    margin-top: 10px;
+    width: 140px;
+  }
+
+  .user-list {
+    display: none;
+  }
+
+  .message-section {
+    height: 55vh;
+    width: 100%;
+    margin: 15px 15px 0 15px;
+  }
+
+  .msg-img {
+    height: 35px;
+    width: 35px;
+  }
+
+  .msg-block {
+    width: 390px;
+  }
+
+  .message-input {
+    height: 18vh;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .draft-msg {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .msg-field {
+    width: 75%;
+    margin: 10px 15px 0 20px;
+  }
+
+  .draft-msg-buttons {
+    margin-left: 10px;
+  }
+
+  .login-message button, p {
+    font-size: 10pt;
+  }
+
+  .signInOut {
+    height: 25px;
+    width: 80px;
+  }
+
+}

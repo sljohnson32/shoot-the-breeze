@@ -22,7 +22,10 @@
   background-color: $darkblue;
   display: flex;
   height: 10vh;
-  justify-content: space-between;
+}
+
+.draft-msg {
+  width: 70%;
 }
 
 .msg-field {
@@ -36,7 +39,7 @@
   margin-right: 25px;
   padding-left: 15px;
   outline: none;
-  width: 560px;
+  width: 85%;
 }
 
 .character-count {
