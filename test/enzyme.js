@@ -62,6 +62,11 @@ describe('<NavBar/>', () => {
 
 describe('<MessageInputs/>', () => {
 
+  it('should have an input', ()=> {
+    const wrapper = shallow(<MessageInputs/>);
+    wrapper.find('input');
+  });
+
   it('should have a submit button', ()=> {
     const wrapper = shallow(<MessageInputs/>);
     wrapper.find('#submit-btn');
@@ -87,6 +92,15 @@ describe('<MessageInputs/>', () => {
     wrapper.find('#clear-btn').simulate('click');
     expect(clickedUpdateDraftMsg.calledOnce).to.be.true;
   });
+  
+  // it('should update draftMsg state when user types in message input', ()=> {
+  //   const wrapper = mount(<MessageInputs/>);
+  //   const inputField = wrapper.find('input');
+  //   expect(wrapper.state('draftMsg')).to.equal('');
+  //   console.log('draftMsg')
+  //   inputField.simulate('change', {target: {value: 'message'}});
+  //   expect(wrapper.state('draftMsg')).to.equal('message');
+  // })
 
 })
 
