@@ -3,7 +3,7 @@ import Utilities, { displayFirstName } from './Utilities';
 
 export default class Messages extends React.Component {
 
-  render(){
+  render() {
     const { user, createdAt, content } = this.props;
     const timeStamp = getDateFormat(createdAt);
     const firstName = displayFirstName(user.displayName);
@@ -16,7 +16,7 @@ export default class Messages extends React.Component {
             <p>{ content }</p>
           </section>
       </div>
-    )
+    );
   }
 }
 
@@ -27,7 +27,7 @@ const getDateFormat = (date) => {
   const dateHour = dateLong.getHours();
   const dateMinutes = dateLong.getMinutes();
   return dateMonth + " " + dateDay + ", " + formatTime(dateHour, dateMinutes);
-}
+};
 
 const monthNames = ["January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"
@@ -40,15 +40,15 @@ const formatTime = (hr, min) => {
 }
 
 const hour = {
-  13: "1",
-  14: "2",
-  15: "3",
-  16: "4",
-  17: "5",
-  18: "6",
-  19: "7",
-  20: "8",
-  21: "9",
-  22: "10",
-  23: "11",
-}
+  13: '1',
+  14: '2',
+  15: '3',
+  16: '4',
+  17: '5',
+  18: '6',
+  19: '7',
+  20: '8',
+  21: '9',
+  22: '10',
+  23: '11',
+};
