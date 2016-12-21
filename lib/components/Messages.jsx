@@ -29,8 +29,7 @@ const getDateFormat = (date) => {
   return dateMonth + " " + dateDay + ", " + formatTime(dateHour, dateMinutes);
 };
 
-const monthNames = ["January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December"
+const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
 ];
 
 const formatTime = (hr, min) => {
