@@ -20,16 +20,18 @@
 
 .user-title {
   margin: 25px 0 10px 15px;
-  color: #2c3e50;
+  color: $darkblue;
   font-size: 12pt;
   font-weight: 800;
 }
 
 .user, .user-selected {
+  color: $darkblue;
   padding: 15px 0 10px 15px;
   font-weight: 400;
 }
 
 .user-selected {
   background-color: $lightblue;
+  color: lightgray;
 }
