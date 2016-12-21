@@ -33,7 +33,7 @@ const monthNames = ["January", "February", "March", "April", "May", "June", "Jul
 ];
 
 const formatTime = (hr, min) => {
-  if (hr > 13) {
+  if (hr > 12) {
     return hour[hr] + ":" + min + 'pm';
   } else return hr + ":" + min + 'am';
 }
