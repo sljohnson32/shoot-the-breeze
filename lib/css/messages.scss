@@ -3,9 +3,9 @@
 .message-section {
   display: inline-block;
   height: 70vh;
-  width: 65%;
-  overflow: scroll;
   margin: 15px 0 0 15px;
+  overflow: scroll;
+  width: 65%;
 }
 
 .msg-block {
@@ -13,22 +13,22 @@
 }
 
 .msg-img {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  overflow: hidden;
-  padding-top: 10px;
   border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
+  display: inline-block;
+  height: 40px;
+  overflow: hidden;
+  padding-top: 10px;
+  width: 40px;
 }
 
 .msg-content {
+  color: $darkblue;
   display: inline-block;
-  color: #2c3e50;
   font-size: 12pt;
-  width: auto;
   margin: 0 10px 10px 15px;
+  max-width: 80%;
   & p {
     display: block;
     padding-top: 10px
@@ -37,7 +37,7 @@
 
 .msg-time-stamp {
   display: inline-block;
-  color: #9b59b6;
+  color: $purple;
   font-size: 12pt;
   width: auto;
   margin-bottom: 0;
@@ -46,17 +46,8 @@
 
 .msg-name {
   display: inline-block;
-  color: #2980b9;
+  color: $lightblue;
   font-size: 12pt;
   font-weight: 700;
   margin-left: 6px;
-}
-
-select {
-  background-color: $lightblue;
-  border: none;
-  color: white;
-  float: right;
-  font-size: 12pt;
-  margin: 10px;
 }
