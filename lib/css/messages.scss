@@ -2,50 +2,52 @@
 
 .message-section {
   display: inline-block;
-  height: 73vh;
-  width: 67%;
+  height: 70vh;
+  width: 65%;
   overflow: scroll;
+  margin: 15px 0 0 15px;
 }
 
-img {
-  display: inline;
-  height: 100%;
-  width: auto;
+.msg-block {
+  margin: 10px 0;
 }
 
-.circle-img {
+.msg-img {
+  display: inline-block;
   width: 40px;
   height: 40px;
-  position: relative;
   overflow: hidden;
+  padding-top: 10px;
   border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
 }
 
-.time-stamp {
+.msg-content {
+  display: inline-block;
+  color: #2c3e50;
+  font-size: 12pt;
+  width: auto;
+  margin: 0 10px 10px 15px;
+  & p {
+    display: block;
+    padding-top: 10px
+  }
+}
+
+.msg-time-stamp {
   display: inline-block;
   color: #9b59b6;
   font-size: 12pt;
-  width: 70%;
-  margin-left: 10px;
+  width: auto;
   margin-bottom: 0;
   font-weight: 400;
 }
 
-p {
-  margin-top: 0;
-}
-
-.name {
+.msg-name {
+  display: inline-block;
   color: #2980b9;
   font-size: 12pt;
   font-weight: 700;
-}
-
-.msg-content {
-  color: #2c3e50;
-  font-size: 12pt;
-  width: 100%;
-  margin-left: 10px;
+  margin-left: 6px;
 }

@@ -2,7 +2,7 @@
 
 .sort-btn {
   display: inline-block;
-  margin: 10px;
+  margin: 6px 10px;
   height: 40px;
   width: 100px;
   border-radius: 4px;
@@ -16,13 +16,14 @@
     border: none;
   }
   &:enabled:hover {
-    border: 4px solid $darkgray;
+    opacity: 0.75;
   }
 }
 
 .signInOut {
   @extend .sort-btn;
   background: $green;
+  height: 35px;
 }
 
 #clear-btn {

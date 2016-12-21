@@ -3,13 +3,13 @@
 .user-list {
   background-color: $lightgray;
   float: right;
-  height: 73.5vh;
+  height: 72.5vh;
   width: 33%;
 }
 
 .current-user-icon {
   display: inline-block;
-  margin-left: 5px;
+  margin-left: 8px;
   width: 10px;
   height: 10px;
   -webkit-border-radius: 40px;
@@ -19,14 +19,17 @@
 }
 
 .user-title {
-  margin: 10px;
+  margin: 25px 0 10px 15px;
   color: #2c3e50;
   font-size: 12pt;
   font-weight: 800;
 }
 
 .user, .user-selected {
-  @extend .user-title;
+  padding: 15px 0 10px 15px;
   font-weight: 400;
+}
 
+.user-selected {
+  background-color: $lightblue;
 }
