@@ -1,7 +1,7 @@
 {
   "name": "shoot-the-breeze",
   "version": "1.0.0",
-  "description": "Shoot The Breeze Chat App project",
+  "description": "A starter kit for Turing School's Shoot The Breeze project",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -17,10 +17,9 @@
   },
   "author": "Sam Johnson & Devin Beliveau",
   "license": "MIT",
-  "bugs": {
-    "url":
+  "homepage": {
+    "url": "https://github.com/sljohnson32/shoot-the-breeze/public/index.html"
   },
-  "homepage": "https://github.com/sljohnson32/shoot-the-breeze/public/index.html",
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-core": "^6.14.0",
