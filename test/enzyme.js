@@ -41,14 +41,27 @@ describe('<NavBar/>', () => {
 
   it('should have a filterMsgs property', ()=> {
     const wrapper = shallow(<NavBar/>);
-    const filterMsgs = wrapper.find('FilterMsgs');
+    const filterMsgs = wrapper.find('filterMsgs');
     expect(wrapper.props().filterMsgs).to.be.defined;
+  });
+
+  it('should have a sortMsgs property', ()=> {
+    const wrapper = shallow(<NavBar/>);
+    const sortMsgs = wrapper.find('sortMsgs');
+    expect(wrapper.props().sortMsgs).to.be.defined;
+  });
+
+  it('should have two sortBtn components', ()=> {
+    const wrapper = shallow(<NavBar/>);
+    const SortBtns = wrapper.find('SortBtns');
+    expect (SortBtns).to.have.length(2);
   });
 
 })
 
 
 describe('<MessageInputs/>', () => {
+
   it('should have a submit button', ()=> {
     const wrapper = shallow(<MessageInputs/>);
     wrapper.find('#submit-btn');
@@ -73,6 +86,21 @@ describe('<MessageInputs/>', () => {
     wrapper.find('#clear-btn');
     wrapper.find('#clear-btn').simulate('click');
     expect(clickedUpdateDraftMsg.calledOnce).to.be.true;
+  });
+
+})
+
+describe('<FilterMsgs/>', () => {
+
+  it('should have an input', ()=> {
+    const wrapper = shallow(<FilterMsgs/>);
+    wrapper.find('input');
+  });
+
+  it('should have a filterMsgs property', ()=> {
+    const wrapper = shallow(<FilterMsgs/>);
+    const filterMsgs = wrapper.find('filterMsgs');
+    expect(wrapper.props().filterMsgs).to.be.defined;
   });
 
 })
