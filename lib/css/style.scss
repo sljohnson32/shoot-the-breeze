@@ -10,20 +10,28 @@ body, html {
   font-family: 'Fira Sans', sans-serif;
   height: 100vh;
   max-width: 900px;
+  min-width: 800px;
   margin: 0 auto;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 415px) {
+
+  body, html {
+    min-width: 350px;
+    height: 100vh;
+    width: 100vw;
+  }
 
   .app-title {
     display: none;
   }
 
   .nav-bar {
-    height: 15vh;
     display: inline-block;
-    text-align: center;
+    height: 15vh;
     padding-top: 10px;
+    text-align: center;
+    width: 100%;
   }
 
   .filter-field {
@@ -44,16 +52,18 @@ body, html {
   .message-section {
     height: 55vh;
     width: 100%;
-    margin: 15px 15px 0 15px;
+    padding: 0;
+    margin: 0;
   }
 
   .msg-img {
     height: 35px;
+    padding: 0 0 0 10px;
     width: 35px;
   }
 
   .msg-block {
-    width: 390px;
+    width: 100%;
   }
 
   .message-input {
