@@ -3,7 +3,7 @@ import Utilities, { displayFirstName } from './Utilities';
 
 export default class Messages extends React.Component {
 
-  render(){
+  render() {
     const { user, createdAt, content } = this.props;
     const timeStamp = getDateFormat(createdAt);
     const firstName = displayFirstName(user.displayName);
@@ -16,7 +16,7 @@ export default class Messages extends React.Component {
             <p>{ content }</p>
           </section>
       </div>
-    )
+    );
   }
 }
 
